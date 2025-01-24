@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
+import 'questions_screen.dart';
 import 'start_screen.dart';
 
+
 void main() {
-  runApp(const MyApp());
+  runApp(MaterialApp(
+    home: Scaffold(
+  body: Container(
+    decoration: const BoxDecoration(
+      gradient: LinearGradient(
+        colors:[Colors.purple, Colors.deepPurple],
+      ),
+    ),
+  ),
+  )
+  ),);
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: const StartScreen(),
-    );
-  }
-}
